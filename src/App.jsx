@@ -2,7 +2,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Noble Team Bunnies</h1>
+      <h1>Noble Team Bunnies!</h1>
     </>
   )
 }
