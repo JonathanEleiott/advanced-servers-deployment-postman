@@ -2,4 +2,8 @@
 
 ## Deployment - process of making your website available on the internet
 
-- Render - website that allows us to use their servers to make our website live
+- Render - one website that allows us to use their servers to make our website live
+
+## More Server Requests
+
+- POST -> add data to a DB
