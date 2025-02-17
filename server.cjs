@@ -1,4 +1,4 @@
-const bunnies = require('./bunnies.js');
+const bunnies = require('./db/bunnies.cjs');
 let idNumber = 6;
 
 const express = require('express');
@@ -6,11 +6,13 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('HELLO WORLD!');
-});
+app.use(express.static('dist'));
 
-app.post('/bunnies', (req, res, next) => {
+// app.get('/', (req, res) => {
+//   res.sendFile(`${__dirname}/dist/index.html`);
+// });
+
+app.post('/api/v1/bunnies', (req, res, next) => {
   // console.log(req.body);
   const { name } = req.body;
 
