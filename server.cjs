@@ -1,4 +1,4 @@
-const bunnies = require('./bunnies.js');
+const bunnies = require('./db/bunnies.cjs');
 let idNumber = 6;
 
 const express = require('express');
